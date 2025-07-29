@@ -13,10 +13,18 @@ public class Main {
 		// telling our JFrame window what to do when the user clicks X 
 		
 		window.setResizable(false);
+		// cannot resize the window
 		window.setTitle("2D Experience");
 		
+		
+		GamePanel gamePanel = new GamePanel(); 
+		window.add(gamePanel); 
+		
+		window.pack(); 
+		//causes the window to be sized(fit the preferred size) and layout as GamePanel.
+		
 		window.setLocationRelativeTo(null);
-		//Positions the JFrame relative to the specified component. If null, it centers the frame on the screeen.
+		//Positions the JFrame relative to the specified component. If null, it centers the frame on the screen.
 		
 		window.setVisible(true);
 	}
