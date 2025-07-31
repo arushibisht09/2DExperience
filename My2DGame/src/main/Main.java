@@ -14,7 +14,7 @@ public class Main {
 		
 		window.setResizable(false);
 		// cannot resize the window
-		window.setTitle("2D Experience");
+		window.setTitle("Blue Girl Adventure");
 		
 		
 		GamePanel gamePanel = new GamePanel(); 
@@ -27,6 +27,8 @@ public class Main {
 		//Positions the JFrame relative to the specified component. If null, it centers the frame on the screen.
 		
 		window.setVisible(true);
+		
+		gamePanel.startGameThread(); 
 	}
 
 }
